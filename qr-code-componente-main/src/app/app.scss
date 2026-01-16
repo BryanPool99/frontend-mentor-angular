@@ -1,0 +1,72 @@
+/*IMPORTACION DE LA FUENTE QUE SE USARA*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/*VARAIBALES DE COLORES PRINCIPALES*/
+$White: hsl(0, 0%, 100%);
+$Slate-300: hsl(212, 45%, 89%);
+$Slate-500: hsl(216, 15%, 48%);
+$Slate-900: hsl(218, 44%, 22%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+main.container-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $Slate-300;
+  .card-container {
+    width: 320px;
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+    background: $White;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    @media (max-width: 375px) {
+      width: 90vw;
+    }
+    .img-container {
+      width: 288px;
+      height: 288px;
+      @media (max-width: 375px) {
+        width: 80vw;
+        height: 80vw;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 0px 16px;
+      h1 {
+        color: $Slate-900;
+        text-align: center;
+        font-size: 22px;
+        @media (max-width: 320px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        color: $Slate-500;
+        font-size: 15px;
+        text-align: center;
+        @media (max-width: 320px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
