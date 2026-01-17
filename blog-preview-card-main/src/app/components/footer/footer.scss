@@ -1,0 +1,12 @@
+$Gray-950: hsl(0, 0%, 7%);
+
+footer.container-footer {
+  display: flex;
+  gap: 12px;
+  align-items: center; //centrar de manera vertical siempre y cuando sea row
+  p.p-author {
+    color: $Gray-950;
+    font-size: 14px;
+    font-weight: 800;
+  }
+}

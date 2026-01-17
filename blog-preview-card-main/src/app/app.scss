@@ -1,0 +1,18 @@
+$Yellow: hsl(47, 88%, 63%);
+$White: hsl(0, 0%, 100%);
+$Gray-500: hsl(0, 0%, 42%);
+$Gray-950: hsl(0, 0%, 7%);
+
+section.container-card {
+  background: $White;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  box-shadow: 10px 10px 5px 0px $Gray-950;
+  max-width: 385px;
+  @media (max-width: 375px) {
+    width: 90vw;
+  }
+}
