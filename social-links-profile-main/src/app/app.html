@@ -1,0 +1,13 @@
+<main class="container-main">
+  <app-header
+    [avatarImg]="personalData.avatar"
+    [name]="personalData.name"
+    [country]="personalData.country"
+    [description]="personalData.description"
+  ></app-header>
+  <section class="container-social-link">
+    @for (item of items; track $index) {
+      <app-social-link [label]="item.label" [link]="item.link" />
+    }
+  </section>
+</main>

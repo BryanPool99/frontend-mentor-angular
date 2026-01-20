@@ -1,0 +1,45 @@
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey-700: hsl(0, 0%, 20%);
+$Grey-800: hsl(0, 0%, 12%);
+$Grey-900: hsl(0, 0%, 8%);
+
+header.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  figure.container-img {
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    img.img-avatar {
+      border-radius: 100%;
+      width: 100%;
+    }
+  }
+  .container-title-country {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    h1.title{
+        text-align: center;
+        color: $White;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    p.country{
+        text-align: center;
+        color: $Green;
+        font-size: 14px;
+        font-weight: 600;
+    }
+  }
+  span.descrption{
+    text-align: center;
+    color: $White;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

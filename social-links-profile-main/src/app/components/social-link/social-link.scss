@@ -1,0 +1,30 @@
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey-700: hsl(0, 0%, 20%);
+$Grey-800: hsl(0, 0%, 12%);
+$Grey-900: hsl(0, 0%, 8%);
+
+aside.container-link {
+  background: $Grey-700;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: background 0.5s cubic-bezier(.12,.88,.75,.15);
+  &:hover{
+    background: $Green;
+  }
+  a{
+    text-decoration: none;
+    padding: 10px;
+    color: $White;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    transition: color 0.5s ease-in-out;
+    &:hover{
+      color: $Grey-700;
+    }
+  }
+}
