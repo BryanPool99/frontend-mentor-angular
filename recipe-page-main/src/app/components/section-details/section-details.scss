@@ -1,0 +1,12 @@
+@use 'variables' as v;
+
+.container-section-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 24px;
+    .subtitle{
+        color: v.$Brown-800;
+        font-weight: v.$font-w-4;
+    }
+}

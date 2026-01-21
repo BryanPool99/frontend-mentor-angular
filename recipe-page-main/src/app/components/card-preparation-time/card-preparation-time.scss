@@ -1,0 +1,45 @@
+@use 'variables' as v;
+
+.card-preparation-time {
+  width: 70vw;
+  @media (min-width: 768px) {
+    width: 25rem;
+    margin: 0 auto;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 24px;
+  background: v.$Rose-50;
+  border-radius: 16px;
+  .title {
+    color: v.$Rose-800;
+  }
+  .container-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      .circle {
+        width: 5px;
+        height: 5px;
+        background: v.$Rose-800;
+        border-radius: 100%;
+      }
+      span {
+        color: v.$Stone-600;
+        font-weight: v.$font-w-4;
+        font-family: v.$font-outfit;
+        font-size: v.$font-size-p;
+        b {
+          color: v.$Stone-600;
+          font-weight: v.$font-w-7;
+        }
+      }
+    }
+  }
+}
