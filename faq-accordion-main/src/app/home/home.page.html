@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> {{titleApp}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container-content">
+    <ion-card class="container-img">
+      <picture>
+        <source
+          srcset="assets/images/background-pattern-desktop.svg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="assets/images/background-pattern-mobile.svg"
+          alt="bg-pattern"
+          class="full-width-img"
+        />
+      </picture>
+    </ion-card>
+    <ion-card class="container-faq">
+      <ion-card-header>
+        <ion-card-title>
+          <img src="assets/images/icon-star.svg" alt="icon-star" />
+          <h2>{{titleFaq}}</h2>
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-accordion-group [multiple]="true" (ionChange)="handleAccordionChange($event)">
+          @for (item of faqs; track $index) {
+          <ion-accordion [value]="item.question" toggle-icon-slot="none">
+            <ion-item slot="header" lines="none">
+              <ion-label class="ion-text-wrap">{{item.question}}</ion-label>
+              <img
+                slot="end"
+                [src]="isExpanded(item.question) 
+                 ? 'assets/images/icon-minus.svg' 
+                 : 'assets/images/icon-plus.svg'"
+                class="faq-icon"
+                alt="toggle"
+              />
+            </ion-item>
+            <div class="ion-padding" slot="content">{{item.answer}}</div>
+          </ion-accordion>
+          }
+        </ion-accordion-group>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

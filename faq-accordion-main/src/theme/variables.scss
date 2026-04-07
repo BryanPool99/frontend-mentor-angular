@@ -1,0 +1,46 @@
+// For information on how to create your own theme, please refer to:
+// https://ionicframework.com/docs/theming/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/*-----------COLORS--------------------*/
+$White: hsl(0, 100%, 100%);
+$Purple-100: hsl(275, 100%, 97%);
+$Purple-600: hsl(292, 16%, 49%);
+$Purple-950: hsl(292, 42%, 14%);
+/*------FONT---------------*/
+$font-family: "Work Sans", sans-serif;
+$font-w-4: 400;
+$font-w-6: 600;
+$font-w-7: 700;
+$font-size: 16px;
+
+:root {
+  /** Usamos tu Purple-950 como color principal **/
+  --ion-color-primary: #{$Purple-950};
+  --ion-color-primary-rgb: 45, 21, 50; // Valor RGB aproximado para efectos de Ionic
+  --ion-color-primary-contrast: #{$White};
+  --ion-color-primary-shade: hsl(292, 42%, 10%);
+  --ion-color-primary-tint: hsl(292, 42%, 20%);
+
+  /** Fondo y Texto General **/
+  --ion-background-color: #{$Purple-100}; // El fondo claro del reto
+  --ion-text-color: #{$Purple-600};
+
+  /** Tipografía **/
+  --ion-font-family: #{$font-family};
+}
+
+/*----------- 3. ESTILOS GLOBALES --------------------*/
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-w-7;
+  color: $Purple-950;
+}

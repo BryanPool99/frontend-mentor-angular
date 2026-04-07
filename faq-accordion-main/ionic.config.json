@@ -1,0 +1,7 @@
+{
+  "name": "faq-accordion-main",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
